@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Runner/obj
+/.vs
+/Runner/bin/Debug/net5.0/Runner.pdb
+/Runner/bin/Debug/net5.0/Runner.exe
+/Runner/bin/Debug/net5.0/Runner.dll
+/Runner/bin/Debug/net5.0/ref/Runner.dll
