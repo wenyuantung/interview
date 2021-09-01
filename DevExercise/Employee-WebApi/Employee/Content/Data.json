@@ -1,0 +1,60 @@
+﻿[
+  {
+    "FirstName": "John",
+    "LastName": "Smith",
+    "Position": "Engineer",
+    "Projects": [
+      {
+        "Name": "Arora",
+        "WeeklyHours": 10
+      },
+      {
+        "Name": "Gamma",
+        "WeeklyHours": 8
+      },
+      {
+        "Name": "Theta",
+        "WeeklyHours": 12
+      }
+    ]
+  },
+  {
+    "FirstName": "Peter",
+    "LastName": "Kaloski",
+    "Position": "Engineer",
+    "Projects": [
+      {
+        "Name": "Beta",
+        "WeeklyHours": 9
+      },
+      {
+        "Name": "Theta",
+        "WeeklyHours": 5
+      },
+      {
+        "Name": "Meta",
+        "WeeklyHours": 14
+      }
+    ]
+  },
+  {
+    "FirstName": "David",
+    "LastName": "Adam",
+    "Position": "Engineer",
+    "Projects": [
+      {
+        "Name": "Gamma",
+        "WeeklyHours": 5
+      },
+      {
+        "Name": "Meta",
+        "WeeklyHours": 20
+      },
+      {
+        "Name": "Arora",
+        "WeeklyHours": 15
+      }
+    ]
+  }
+
+]

@@ -1,0 +1,28 @@
+﻿<Window x:Class="Question1.AttachedBehaviorView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Question1"
+        mc:Ignorable="d"
+        Title="AttachedBehaviorView" Height="350" Width="540">
+
+    <Grid local:AttachedBehavior.LoadedMethodName="LoadData"> <!-- [Call LoadData] -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Border Margin="5" Padding="2" BorderThickness="2" BorderBrush="Black">
+            <TextBlock
+                Text="AttachedBehavior.cs hooks up the Loaded event.&#x0a;Modify this AttachedBehaviorView.xaml file to load data in view model.&#x0a;(Call AttachedBehaviorViewModel.LoadData method)">
+                <TextBlock.FontSize>16</TextBlock.FontSize>
+            </TextBlock>
+        </Border>
+        <StackPanel Grid.Row="1">
+            <TextBlock Margin="5" Text="Data Loaded:" />
+            <TextBlock Margin="5" Text="{Binding Name}" />
+            <TextBlock Margin="5" Text="{Binding Age}" />
+            <TextBlock Margin="5" Text="{Binding Address}" />
+        </StackPanel>
+    </Grid>
+</Window>

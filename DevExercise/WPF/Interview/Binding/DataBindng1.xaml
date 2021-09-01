@@ -1,0 +1,26 @@
+﻿<Window x:Class="Interview.Binding.DataBindng1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interview.Binding"
+        xmlns:data="clr-namespace:Interview.Data"
+        mc:Ignorable="d"
+        Title="DataBindng1" Height="300" Width="480">
+    <Window.Resources>
+        <data:Person x:Key="Person" />
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock Margin="2" HorizontalAlignment="Center" Background="Chartreuse"
+                   Text="Use the Person instantiate in Xaml(Window.Resources), show the person's name.&#x0a;Files: DataBindng1.xaml, DataBindng1.xaml.cs" />
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <!--        <TextBlock Margin="2, 10, 2, 2" MinWidth="160" Text="[[Person's Name]]"></TextBlock>-->
+            <TextBlock Margin="2, 10, 2, 2" MinWidth="160" Grid.Row="1" HorizontalAlignment="Center"
+                       VerticalAlignment="Center" Text="{Binding Source={StaticResource Person}, Path=Name }" />
+        </StackPanel>
+    </Grid>
+</Window>

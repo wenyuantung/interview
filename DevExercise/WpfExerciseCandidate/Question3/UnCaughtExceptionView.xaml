@@ -1,0 +1,36 @@
+﻿<Window x:Class="Question3.UnCaughtExceptionView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="UnCaughtExceptionView" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <!-- Start Question -->
+        <Border Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="0" Margin="5" Padding="2" BorderThickness="2"
+                BorderBrush="Black">
+            <TextBlock Margin="5, 5, 5, 10"
+                       Text="Modify the code to crash the app.">
+                <TextBlock.FontSize>16</TextBlock.FontSize>
+            </TextBlock>
+        </Border>
+        <!-- End Question -->
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Margin="5" Text="Name: " />
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="5" Text="John Doe" />
+        <Button Grid.Row="2" Grid.Column="0" Margin="5" Click="OnClickChangeName" HorizontalAlignment="Left"
+                VerticalAlignment="Top">
+            _Change Name
+        </Button>
+    </Grid>
+</Window>

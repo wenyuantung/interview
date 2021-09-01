@@ -1,0 +1,60 @@
+﻿<Window x:Class="Interview.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="525">
+    <Window.Resources>
+        <system:String x:Key="TControls">Interview.TControls</system:String>
+        <system:String x:Key="Binding">Interview.Binding</system:String>
+    </Window.Resources>
+    <Grid Button.Click="ButtonClick">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid Margin="5">
+            <StackPanel>
+                <Button HorizontalAlignment="Center" Width="100" Height="30" Margin="4" Tag="{StaticResource TControls}">GroupBox</Button>
+                <Button HorizontalAlignment="Center" Width="100" Height="30" Margin="4" Tag="{StaticResource TControls}">TextBox</Button>
+                <Button HorizontalAlignment="Center" Width="100" Height="30" Margin="4" Tag="{StaticResource TControls}">TreeView</Button>
+                <Button HorizontalAlignment="Center" Width="100" Height="30" Margin="4" Tag="{StaticResource TControls}">Event</Button>
+                <Button HorizontalAlignment="Center" Width="100" Height="30" Margin="4" Tag="{StaticResource TControls}">Command</Button>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="1" Margin="5">
+            <StackPanel>
+                <Button HorizontalAlignment="Center" Width="100" Height="30" Margin="4" Tag="{StaticResource Binding}">SimpleBinding</Button>
+                <Button HorizontalAlignment="Center" Width="100" Height="30" Margin="4" Tag="{StaticResource Binding}">DataBindng1</Button>
+                <Button HorizontalAlignment="Center" Width="100" Height="30" Margin="4" Tag="{StaticResource Binding}">DataBindng1n1</Button>
+                <Button HorizontalAlignment="Center" Width="100" Height="30" Margin="4" Tag="{StaticResource Binding}">DataBinding2</Button>
+                <Button HorizontalAlignment="Center" Width="100" Height="30" Margin="4" Tag="{StaticResource Binding}">DataBinding3</Button>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="2" Margin="5">
+            <StackPanel>
+                <Button HorizontalAlignment="Center" Width="100" Height="30" Margin="4" Tag="{StaticResource Binding}">DataBinding4</Button>
+                <Button HorizontalAlignment="Center" Width="100" Height="30" Margin="4" Tag="{StaticResource Binding}">DataBinding5</Button>
+                <Button HorizontalAlignment="Center" Width="100" Height="30" Margin="4" Tag="{StaticResource Binding}">DataBinding6</Button>
+                <Button HorizontalAlignment="Center" Width="100" Height="30" Margin="4" Tag="{StaticResource Binding}">DataBinding7</Button>
+                <Button HorizontalAlignment="Center" Width="100" Height="30" Margin="4" Tag="{StaticResource Binding}">DataBinding8</Button>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="3" Margin="5">
+            <StackPanel>
+                <Button HorizontalAlignment="Center" Width="100" Height="30" Margin="4" Tag="{StaticResource Binding}">AttachedBehaviorView</Button>
+                <Button HorizontalAlignment="Center" Width="100" Height="30" Margin="4" Tag="{StaticResource Binding}">AsyncCmdView</Button>
+                <Button HorizontalAlignment="Center" Width="100" Height="30" Margin="4" Tag="{StaticResource Binding}">AsyncAwaitView</Button>
+            </StackPanel>
+        </Grid>
+<!--        <StackPanel Margin="5">-->
+<!--            -->
+<!--           -->
+<!--           -->
+<!--        </StackPanel>-->
+    </Grid>
+</Window>

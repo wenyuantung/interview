@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfExercise", "WpfExercise\WpfExercise.csproj", "{462F9A64-F4D1-4516-9C6A-7FC903471081}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question1", "Question1\Question1.csproj", "{9E1D9085-C209-4743-B2FF-0C2C6B084BB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question2", "Question2\Question2.csproj", "{1F5E431A-66BF-4DC0-A91C-FAECCEEDC141}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question3", "Question3\Question3.csproj", "{750049AF-DB71-45B8-AD8E-322532300FAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{462F9A64-F4D1-4516-9C6A-7FC903471081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{462F9A64-F4D1-4516-9C6A-7FC903471081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{462F9A64-F4D1-4516-9C6A-7FC903471081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{462F9A64-F4D1-4516-9C6A-7FC903471081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E1D9085-C209-4743-B2FF-0C2C6B084BB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E1D9085-C209-4743-B2FF-0C2C6B084BB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E1D9085-C209-4743-B2FF-0C2C6B084BB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E1D9085-C209-4743-B2FF-0C2C6B084BB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F5E431A-66BF-4DC0-A91C-FAECCEEDC141}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F5E431A-66BF-4DC0-A91C-FAECCEEDC141}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F5E431A-66BF-4DC0-A91C-FAECCEEDC141}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F5E431A-66BF-4DC0-A91C-FAECCEEDC141}.Release|Any CPU.Build.0 = Release|Any CPU
+		{750049AF-DB71-45B8-AD8E-322532300FAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{750049AF-DB71-45B8-AD8E-322532300FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{750049AF-DB71-45B8-AD8E-322532300FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{750049AF-DB71-45B8-AD8E-322532300FAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D9DC48E-D963-4F65-97E2-A72D5B6C23F3}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs:8080/tfs/sperrycollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WpfExercise\\WpfExercise.csproj
+		SccProjectName1 = WpfExercise
+		SccLocalPath1 = WpfExercise
+		SccProjectUniqueName2 = Question1\\Question1.csproj
+		SccProjectName2 = Question1
+		SccLocalPath2 = Question1
+		SccProjectUniqueName3 = Question2\\Question2.csproj
+		SccProjectName3 = Question2
+		SccLocalPath3 = Question2
+		SccProjectUniqueName4 = Question3\\Question3.csproj
+		SccProjectName4 = Question3
+		SccLocalPath4 = Question3
+	EndGlobalSection
+EndGlobal

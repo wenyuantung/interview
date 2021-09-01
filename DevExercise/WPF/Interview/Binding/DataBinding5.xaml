@@ -1,0 +1,48 @@
+﻿<Window x:Class="Interview.Binding.DataBinding5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:data="clr-namespace:Interview.Data"
+        xmlns:binding="clr-namespace:Interview.Binding"
+        mc:Ignorable="d"
+        Title="DataBinding5" Height="300" Width="410">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.Resources>
+            <DataTemplate DataType="{x:Type data:Person}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="210" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Grid.Row="0" Text="Name:" />
+                    <TextBlock Grid.Column="1" Grid.Row="0" Text="{Binding Name}" />
+                    <TextBlock x:Name="NameTextBlock"  Grid.Column="0" Grid.Row="1" Text="Age:" />
+                    <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding Age, UpdateSourceTrigger=PropertyChanged}" />
+                    <TextBlock Grid.Column="0" Grid.Row="2" Text="Address:" />
+                    <TextBlock Grid.Column="1" Grid.Row="2" Text="{Binding Address}" />
+                </Grid>
+
+                <!-- Start Answer -->
+                <DataTemplate.Triggers>
+                    <DataTrigger Binding="{Binding Age}" Value="40">
+                        <Setter TargetName="NameTextBlock" Property="Background" Value="Red"></Setter>
+                    </DataTrigger>
+                </DataTemplate.Triggers>
+                <!-- End Answer -->
+
+            </DataTemplate>
+        </Grid.Resources>
+        <TextBlock Background="Chartreuse" Margin="10" Text="Make Age TextBlock (Age:) background red if age is EQUAL TO 40.&#x0a;Type 40 in the age text box to see the red background color.&#x0a;&#x0a;Files:DataBinding5.xaml, DataBinding5.xaml.cs, Person.cs"></TextBlock>
+        <ContentControl  Margin="10" Grid.Row="1" Content="{Binding}" />
+    </Grid>
+</Window>

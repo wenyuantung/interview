@@ -1,0 +1,24 @@
+﻿<Window x:Class="Interview.TControls.Event"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Event" Height="300" Width="380"
+        x:Name="TopWindow">
+    <Grid x:Name="MyGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Center" Background="Chartreuse"
+                   Text="How to prevent MyStackPanel from handling mouse click events?&#x0a;&#x0a;Files:Event.xaml, Event.xaml.cs" />
+        <StackPanel x:Name="MyStackPanel"
+                    Grid.Row="1" Margin="10" Button.Click="OnClickStackPanel">
+            <Button x:Name="MyButton"
+                    Click="OnClickButton" HorizontalAlignment="Center">
+                Mouse Event
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

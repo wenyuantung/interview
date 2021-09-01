@@ -1,0 +1,34 @@
+﻿<Window x:Class="Interview.Binding.DataBinding2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="DataBinding2" Height="600" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="200" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Margin="10" Grid.Column="0" Grid.ColumnSpan="2" Background="Chartreuse" Text="Click AddAge button will add 0.1 to the age.&#x0a;Click the Show button will show the current age in a message box.&#x0a;Make the age showing in message box and text box in sync.&#x0a;Files:DataBinding2.xaml, DataBinding2.xaml.cs, Person.cs"></TextBlock>
+        <Label Name="nameLabel" Grid.Row="1" Grid.Column="0" Margin="2" Target="{Binding ElementName=nameText}">_Name:</Label>
+        <TextBox Name="nameText" Grid.Row="1" Grid.Column="1" Margin="2"
+                 Text="{Binding Name}" />
+
+        <Label Name="ageLabel" Margin="2" Grid.Row="2" Grid.Column="0" Target="{Binding ElementName=ageText}">_Age:</Label>
+        <TextBox Name="ageText" Grid.Column="1" Grid.Row="2" Margin="2"
+                 Text="{Binding Age}" />
+
+        <StackPanel Grid.Row="3" Grid.Column="1">
+            <Button Margin="4" Content="_Show..." Click="ShowPersonNameAge" />
+            <Button Margin="4" Content="_AddAge..." Click="AddAge" />
+        </StackPanel>
+    </Grid>
+</Window>

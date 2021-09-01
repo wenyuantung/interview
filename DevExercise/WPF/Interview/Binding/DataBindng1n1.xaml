@@ -1,0 +1,23 @@
+﻿<Window x:Class="Interview.Binding.DataBindng1n1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Interview.Binding"
+        xmlns:data="clr-namespace:Interview.Data"
+        mc:Ignorable="d"
+        Title="DataBindng1n1" Height="300" Width="560">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock Margin="2" HorizontalAlignment="Center" Background="Chartreuse"
+                   Text="1. What is needed to be done in code behind to display person's name, John Doe, in the text box.&#x0a;2. Type in Mary Lynn in the Text Box, then immediately press Alt+s to invoke Show.&#x0a;   What does it show? Modify code to show Mary Lynn.&#x0a;&#x0a;Files: DataBindng1n1.xaml, DataBindng1n1.xaml.cs" />
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBox Margin="2, 10, 2, 2" MinWidth="160" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"/>
+<!--            <TextBox Margin="2, 10, 2, 2" MinWidth="160" Text="{Binding Name}" />-->
+            <Button Margin="4" Content="_Show" MinWidth="40" MinHeight="20" HorizontalAlignment="Center" Click="Show" />
+        </StackPanel>
+    </Grid>
+</Window>
